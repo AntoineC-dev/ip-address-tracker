@@ -11,44 +11,42 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container">
-        <h1 class="title">IP Address Tracker</h1>
-        <form id="form" class="form">
-          <div class="form-group">
-            <label for="search" class="sr-only">Search any IP Address or Domain</label>
-            <input
-              id="search"
-              name="search"
-              type="text"
-              aria-invalid="false"
-              aria-describedby="search-error"
-              placeholder="Search for any IP address or domain"
-            />
-            <span id="search-error"></span>
-          </div>
-          <button class="form-submit">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 14">
-              <path fill="none" stroke="currentColor" stroke-width="3" d="m2 1 6 6-6 6" />
-            </svg>
-          </button>
-        </form>
-        <div class="results">
-          <div class="box">
-            <span class="box-title">Ip Address</span>
-            <span id="ip-address" class="box-content">192.212.174.101</span>
-          </div>
-          <div class="box">
-            <span class="box-title">Location</span>
-            <span id="location" class="box-content">Brooklyn, NY 10001</span>
-          </div>
-          <div class="box">
-            <span class="box-title">Timezone</span>
-            <span id="timezone" class="box-content">UTC -05:00</span>
-          </div>
-          <div class="box">
-            <span class="box-title">Isp</span>
-            <span id="isp" class="box-content">SpaceX Starlink</span>
-          </div>
+      <h1 class="header-title">IP Address Tracker</h1>
+      <form id="form" class="form">
+        <div class="form-group">
+          <label for="search" class="sr-only">Search any IP Address or Domain</label>
+          <input
+            id="search"
+            name="search"
+            type="text"
+            aria-invalid="true"
+            aria-describedby="search-error"
+            placeholder="Search for any IP address or domain"
+          />
+          <span id="search-error">Can't be blank</span>
+        </div>
+        <button class="form-submit">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 14">
+            <path fill="none" stroke="currentColor" stroke-width="3" d="m2 1 6 6-6 6" />
+          </svg>
+        </button>
+      </form>
+      <div class="results">
+        <div class="box">
+          <span class="box-title">Ip Address</span>
+          <span id="ip-address" class="box-content">192.212.174.101</span>
+        </div>
+        <div class="box">
+          <span class="box-title">Location</span>
+          <span id="location" class="box-content">Brooklyn, NY 10001</span>
+        </div>
+        <div class="box">
+          <span class="box-title">Timezone</span>
+          <span id="timezone" class="box-content">UTC -05:00</span>
+        </div>
+        <div class="box">
+          <span class="box-title">Isp</span>
+          <span id="isp" class="box-content">SpaceX Starlink</span>
         </div>
       </div>
     </header>
