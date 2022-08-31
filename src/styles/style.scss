@@ -1,0 +1,23 @@
+@use "variables" as *;
+@use "reset";
+@use "utilities";
+
+body {
+  font-family: $ff-body;
+  line-height: $lh-body;
+}
+
+* {
+  &:focus,
+  &:focus-visible {
+    outline: $clr-gray-light solid thick;
+  }
+}
+
+input[aria-invalid="true"] {
+  outline: $clr-error dotted thick;
+}
+
+button {
+  border-radius: 1.5rem;
+}

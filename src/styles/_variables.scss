@@ -1,0 +1,30 @@
+/** Typography **/
+$ff-body: "Rubik", sans-serif;
+
+$fs-xs: 0.6875rem;
+$fs-sm: 0.8125rem;
+$fs-base: 1rem;
+$fs-md: 1.125rem;
+$fs-lg: 1.25rem;
+$fs-xl: 1.625rem;
+$fs-2xl: 2rem;
+
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+
+$lh-body: 1.25;
+$lh-title: 1;
+
+$ls-tight: -0.01em;
+$ls-snug: -0.005em;
+$ls-normal: 0.00625em;
+$ls-wide: 0.09em;
+
+/** Colors **/
+$clr-white: hsla(0, 0%, 98%, 1);
+$clr-black: hsla(0, 0, 8%, 1);
+$clr-error: hsla(355, 61%, 49%, 1);
+$clr-accent: hsla(228, 45%, 44%, 1);
+$clr-gray-light: hsla(0, 0%, 59%, 1);
+$clr-gray-dark: hsla(0, 0%, 17%, 1);
