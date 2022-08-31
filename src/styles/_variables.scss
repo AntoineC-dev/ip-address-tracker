@@ -23,8 +23,15 @@ $ls-wide: 0.09em;
 
 /** Colors **/
 $clr-white: hsla(0, 0%, 98%, 1);
-$clr-black: hsla(0, 0, 8%, 1);
+$clr-black: hsla(0, 0%, 8%, 1);
 $clr-error: hsla(355, 61%, 49%, 1);
 $clr-accent: hsla(228, 45%, 44%, 1);
 $clr-gray-light: hsla(0, 0%, 59%, 1);
 $clr-gray-dark: hsla(0, 0%, 17%, 1);
+$clr-divider: hsla(0, 0%, 59%, 0.3);
+
+/** Breakpoints **/
+$screen-sm: 640px;
+$screen-md: 768px;
+$screen-lg: 1024px;
+$screen-xl: 1280px;
