@@ -23,7 +23,7 @@ input[aria-invalid="true"] {
 .header {
   height: 18.75rem;
   padding: 1.5rem;
-  background: $clr-accent url("./pattern-bg.png") no-repeat center;
+  background: $clr-accent url("../assets/pattern-bg.png") no-repeat center;
   background-size: cover;
   &-container {
     display: flex;
