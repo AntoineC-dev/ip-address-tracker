@@ -100,5 +100,5 @@ searchInputEl.addEventListener("input", onInput);
  */
 
 (async function initializeApp() {
-  await handleIpGeolocationApiRequest("test"); // Gets current ip data
+  await handleIpGeolocationApiRequest(); // Gets current ip data
 })();
