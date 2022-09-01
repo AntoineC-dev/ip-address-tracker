@@ -92,8 +92,7 @@ input[aria-invalid="true"] {
       font-size: $fs-sm;
       font-weight: $fw-medium;
       letter-spacing: $ls-normal;
-      color: $clr-error;
-      text-shadow: 1px 1px 1px $clr-divider;
+      color: $clr-white;
       @media (min-width: $screen-md) {
         font-size: $fs-base;
       }

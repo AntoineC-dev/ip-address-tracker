@@ -1,4 +1,4 @@
 export * from "./errors";
-export * from "./ipgeolocation";
+export * from "./ipwhois";
 export * from "./leaflet";
 export * from "./validators";

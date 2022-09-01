@@ -1,6 +1,6 @@
 import "./styles/style.scss";
 import type { Map, Marker } from "leaflet";
-import { isValidDomain, isValidIp, getIpGeolocationData, getErrorMessage, createMap, updateMap } from "./utils";
+import { isValidIp, getIpGeolocationData, getErrorMessage, createMap, updateMap } from "./utils";
 
 /**
  * HTML ELEMENTS
@@ -23,7 +23,7 @@ const mapEl = document.getElementById("map") as HTMLDivElement;
 let map: Map | undefined = undefined;
 let marker: Marker | undefined = undefined;
 
-const handleIpGeolocationApiRequest = async (searchValue: string | null) => {
+const handleIpGeolocationApiRequest = async (searchValue?: string) => {
   try {
     const searchResults = await getIpGeolocationData(searchValue);
     ipAddressEl.textContent = searchResults.ip;
@@ -63,8 +63,8 @@ const handleFormError = (error?: string) => {
 const onSubmit = async (e: SubmitEvent) => {
   e.preventDefault();
   const searchValue = (new FormData(formEl).get("search") as string).trim();
-  if (!isValidIp(searchValue) && !isValidDomain(searchValue)) {
-    handleFormError("Invalid ip or domain");
+  if (!isValidIp(searchValue)) {
+    handleFormError("Invalid ip address");
     return searchInputEl.focus();
   }
   await handleIpGeolocationApiRequest(searchValue);
@@ -80,5 +80,5 @@ searchInputEl.addEventListener("input", onInput);
  */
 
 (async function initializeApp() {
-  await handleIpGeolocationApiRequest(null); // Gets current ip data
+  await handleIpGeolocationApiRequest(); // Gets current ip data
 })();
