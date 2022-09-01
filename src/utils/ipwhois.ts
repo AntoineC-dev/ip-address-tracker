@@ -1,5 +1,5 @@
 const API_BASE = "https://ipwho.is";
-const FIELDS = "ip,country,region,city,postal,latitude,longitude,connection.isp,timezone.utc";
+const FIELDS = "ip,message,country,region,city,postal,latitude,longitude,connection.isp,timezone.utc";
 
 interface IPWhoIsJSONResponse {
   ip: string;
@@ -31,7 +31,7 @@ export const getIpGeolocationData = async (ip?: string) => {
   const response = ip
     ? await fetch(`${API_BASE}/${ip}?fields=${FIELDS}`)
     : await fetch(`${API_BASE}/?fields=${FIELDS}`);
-  const data = (await response.json()) as IPWhoIsJSONResponse;
+  const data = await response.json();
   if (data.message) throw new Error(data.message);
   return formatdata(data);
 };
