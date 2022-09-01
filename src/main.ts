@@ -15,7 +15,27 @@ const locationEl = document.getElementById("location") as HTMLSpanElement;
 const timezoneEl = document.getElementById("timezone") as HTMLSpanElement;
 const ispEl = document.getElementById("isp") as HTMLSpanElement;
 
+const toast = document.getElementById("toast") as HTMLDivElement;
+const toastMessage = document.querySelector(".toast-message") as HTMLSpanElement;
+const toastBtn = document.querySelector(".toast-close") as HTMLButtonElement;
+
 const mapEl = document.getElementById("map") as HTMLDivElement;
+
+/**
+ * SETUP ERROR TOAST
+ */
+
+const hideErrorToast = () => {
+  if (!toast.classList.contains("show")) return;
+  toast.classList.remove("show");
+  toastMessage.textContent = null;
+};
+const showErrorToast = (message: string) => {
+  toastMessage.textContent = message;
+  toast.classList.add("fade", "show");
+  setTimeout(hideErrorToast, 4500);
+};
+toastBtn.addEventListener("click", hideErrorToast);
 
 /**
  * SETUP IP GEOLOCATION
@@ -42,7 +62,7 @@ const handleIpGeolocationApiRequest = async (searchValue?: string) => {
     }
   } catch (error) {
     const message = getErrorMessage(error);
-    console.error(message);
+    showErrorToast(message);
   }
 };
 
@@ -80,5 +100,5 @@ searchInputEl.addEventListener("input", onInput);
  */
 
 (async function initializeApp() {
-  await handleIpGeolocationApiRequest(); // Gets current ip data
+  await handleIpGeolocationApiRequest("test"); // Gets current ip data
 })();
