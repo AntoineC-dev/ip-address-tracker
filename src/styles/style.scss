@@ -2,6 +2,10 @@
 @use "reset";
 @use "utilities";
 
+/**
+* GENERAL
+**/
+
 body {
   font-family: $ff-body;
   line-height: $lh-body;
@@ -19,6 +23,10 @@ body {
 input[aria-invalid="true"] {
   box-shadow: inset 0px 0px 0px 4px $clr-error;
 }
+
+/**
+* HEADER
+**/
 
 .header {
   height: 18.75rem;
@@ -112,6 +120,8 @@ input[aria-invalid="true"] {
 }
 
 .results {
+  position: relative;
+  z-index: 999;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -185,8 +195,13 @@ input[aria-invalid="true"] {
   }
 }
 
+/**
+* MAP
+**/
+
+@import "leaflet/dist/leaflet.css";
+
 #map {
-  z-index: -10;
-  flex: 1 1 0%;
+  flex: 1;
   background-color: $clr-gray-light;
 }
