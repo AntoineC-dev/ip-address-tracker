@@ -5,6 +5,8 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 I used [ipwhois.io](https://ipwhois.io/) for geolocation instead of the recommended [geo.ipify.org](https://geo.ipify.org/) because it has a much higher request threshold (x10000/month).
 It means that the app only allows geolocation by IP Address, and not by domain name.
 
+I also chose to display the api errors in a custom made toast.
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -41,7 +43,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/ip-address-tracker-html-css-ts-ipwhois-leaflet-mapbox-hrEkDVVjE1](https://www.frontendmentor.io/solutions/ip-address-tracker-html-css-ts-ipwhois-leaflet-mapbox-hrEkDVVjE1)
 - Live Site URL: [https://ip-address-tracker-mu-silk.vercel.app/](https://ip-address-tracker-mu-silk.vercel.app/)
 
 ## My process
