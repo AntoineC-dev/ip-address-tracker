@@ -31,7 +31,11 @@ Users should be able to:
 
 ### Screenshot
 
+- Desktop (1440x800)
+
 ![Fullpage Desktop](./fullpage-desktop.png)
+
+- Mobile (375x760)
 
 ![Fullpage Mobile](./fullpage-mobile.png)
 
@@ -46,11 +50,15 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- SASS/SCSS preprocessor
-- Flexbox
 - CSS Grid
+- CSS Flexbox
 - Mobile-first workflow
-- [Vite](https://vitejs.dev/)
+- [SASS/SCSS](https://sass-lang.com/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Vitejs](https://vitejs.dev/)
+- [ipwhois](https://ipwhois.io/)
+- [Leaflet](https://leafletjs.com/)
+- [Mapbox](https://www.mapbox.com/)
 
 ### What I learned
 
@@ -134,7 +142,7 @@ I plan to create a toggle button to be able to hide the results panel because it
 - [Vitejs](https://vitejs.dev/) - Js Dev server & code bundler.
 - [A Modern CSS Reset](https://piccalil.li/blog/a-modern-css-reset/) - Blog article by [Andy Bell](https://github.com/hankchizljaw/).
 - [ipwhois.io](https://ipwhois.io/) - Fast and accurate IP Geolocation API with a massive free tier (x10000 requests/month).
-- [LeafletJS](https://leafletjs.com/) - Open-source JavaScript library for mobile-friendly interactive maps.
+- [Leaflet](https://leafletjs.com/) - Open-source JavaScript library for mobile-friendly interactive maps.
 - [Mapbox](https://www.mapbox.com/) - A large choice of map styles with a good free tier and URL restricted api_tokens.
 - [Heroicons](https://heroicons.com/) - Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.
 
