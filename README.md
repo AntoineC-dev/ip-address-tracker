@@ -96,7 +96,7 @@ You create a **\_filename.scss** and import it with the **@use** directive:
     font-size: $fs-xl;
   }
 
-  /** A variable used in a mediaquery 😉 **/
+  /** A variable used as the min-width in the mediaquery 😉 **/
   @media (min-width: $screen-md) {
     height: 17.5rem;
     padding: 1.75rem;
