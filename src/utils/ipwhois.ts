@@ -22,7 +22,7 @@ interface IPWhoIsJSONResponse {
 const formatdata = (data: IPWhoIsJSONResponse): App.SearchResults => {
   const { ip, latitude, longitude, connection } = data;
   const location_pre = data.region || data.country;
-  const location = `${location_pre}, ${data.city} ${data.postal}`.trim();
+  const location = `${data.city}, ${location_pre} ${data.postal}`.trim();
   const timezone = `UTC ${data.timezone.utc}`;
   return { location, ip, isp: connection.isp, latitude, longitude, timezone };
 };
