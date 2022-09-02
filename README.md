@@ -61,7 +61,7 @@ I will 100% use it again. It is so nice! I loved everything about it such as:
 
 - Code splitting with partials
 
-You create a **\_filename.scss** and import it with the @use directive:
+You create a **\_filename.scss** and import it with the **@use** directive:
 
 ```scss
 @use "variables" as *; // Imports _variables.scss
