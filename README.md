@@ -111,7 +111,7 @@ You create a **\_filename.scss** and import it with the **@use** directive:
 
 #### Additional CSS Reset rules
 
-I added some new properties in my usual reset for users with the prefers-reduced-motion setting.
+I added some new properties in my usual reset for users with `prefers-reduced-motion: reduce`.
 
 ```css
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -148,4 +148,4 @@ I plan to create a toggle button to be able to hide the results panel because it
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@AntoineC-dev](https://www.frontendmentor.io/profile/AntoineC-dev)
