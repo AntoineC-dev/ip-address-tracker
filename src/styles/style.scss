@@ -203,6 +203,25 @@ input[aria-invalid="true"] {
 #map {
   flex: 1;
   background-color: $clr-gray-light;
+  position: relative;
+}
+
+/**
+* FOOTER
+**/
+
+.footer {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  z-index: 999;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75em;
+  font-size: $fs-sm;
+  background-color: $clr-white;
+  a {
+    color: $clr-accent;
+  }
 }
 
 /**
